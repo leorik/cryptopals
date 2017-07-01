@@ -10,6 +10,4 @@
 
 int base64Test();
 
-FUNC_RESULT bytesToBase64(const byte *bytes, const size_t bytesAmount, char *base64Str);
-
 #endif //CRYPTOPALS_BASE64_H
