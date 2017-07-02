@@ -9,7 +9,6 @@
 #include "../common.h"
 #include <string.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 size_t getPaddedBytesLen(size_t bytesAmount) {
     size_t bytesAmountDivisionRemainder = bytesAmount % 3;
@@ -29,35 +28,6 @@ FUNC_RESULT getHexCharsCountFromStr(const char* str, size_t* size) {
     *size = getPaddedBytesLen(len / 2);
 
     return RESULT_OK;
-}
-
-int compareStrings(const char *str1, const char *str2) {
-    size_t strlen1 = strlen(str1);
-    size_t strlen2 = strlen(str2);
-
-    if (strlen1 != strlen2) {
-        printf("Length mismatch: %d and %d\n", strlen1, strlen2);
-    }
-    size_t nominalLen;
-
-    if (strlen1 < strlen2) {
-        nominalLen = strlen1;
-    } else {
-        nominalLen = strlen2;
-    }
-
-    for (size_t i = 0; i < nominalLen; i++) {
-        char ch1 = *(str1 + i);
-        char ch2 = *(str2 + i);
-        if (ch1 != ch2) {
-            printf("Mismatch from symbol %d: %c and %c", i, ch1, ch2);
-
-            return EXIT_SUCCESS;
-        }
-    }
-
-    printf("Strings match");
-    return EXIT_SUCCESS;
 }
 
 int base64Test() {
