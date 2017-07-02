@@ -1,8 +1,8 @@
 
-#include "set1/xor.h"
+#include "set1/xorCipher.h"
 
 int main() {
-    xorTest();
+    xorCipherTest();
 
     return 0;
 }

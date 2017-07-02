@@ -3,5 +3,5 @@ project(cryptopals)
 
 set(CMAKE_C_STANDARD 11)
 
-set(SOURCE_FILES main.c set1/base64.c set1/base64.h qol.h common.c common.h set1/xor.c set1/xor.h)
+set(SOURCE_FILES main.c set1/base64.c set1/base64.h qol.h common.c common.h set1/xor.c set1/xor.h set1/xorCipher.c set1/xorCipher.h)
 add_executable(cryptopals ${SOURCE_FILES})
