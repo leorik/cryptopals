@@ -11,6 +11,13 @@
 
 const char *BASE_64_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
+const char* MOST_FREQUENT_ENGLISH_CHARS = "ETAOIN SHRDLUetaoinshrdlu";
+
+const uint ASCII_CODEPAGE_READABLE_SYMBOLS_START = 0x1F;
+
+const uint ASCII_CODEPAGE_READABLE_SYMBOLS_END = 0x7E;
+
+
 int compareStrings(const char *str1, const char *str2) {
     size_t strlen1 = strlen(str1);
     size_t strlen2 = strlen(str2);

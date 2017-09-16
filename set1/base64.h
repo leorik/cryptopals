@@ -6,7 +6,6 @@
 #define CRYPTOPALS_BASE64_H
 
 #include <stddef.h>
-#include "../qol.h"
 
 int base64Test();
 

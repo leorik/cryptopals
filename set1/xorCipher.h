@@ -4,6 +4,9 @@
 
 #ifndef CRYPTOPALS_XORCIPHER_H
 #define CRYPTOPALS_XORCIPHER_H
+#include "../common.h"
+
+FUNC_RESULT tryDecipherText(char* text, byte** resultBuffer);
 
 int xorCipherTest();
 

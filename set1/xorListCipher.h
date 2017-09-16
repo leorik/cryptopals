@@ -1,0 +1,8 @@
+//
+// Created by leorik on 16.09.2017.
+//
+
+#ifndef CRYPTOPALS_XORLISTCIPHER_H
+#define CRYPTOPALS_XORLISTCIPHER_H
+
+#endif //CRYPTOPALS_XORLISTCIPHER_H
